@@ -1,0 +1,73 @@
+.btn-primary {
+  display: inline-flex;
+  height: 64px;
+  padding: 0px 24px;
+  border-radius: 8px;
+  background: var(--primary-primary-50, #246beb);
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  color: var(--gray-gray-0, #fff);
+  font-family: "Pretendard GOV";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background: var(--primary-primary-60, #1d56bc);
+  }
+  &:active {
+    background: var(--primary-primary-70, #16408d);
+  }
+  &:disabled {
+    background: var(--gray-gray-30, #d8d8d8);
+    color: var(--gray-gray-60, #717171);
+    cursor: not-allowed;
+  }
+  &[aria-disabled="true"] {
+    background: var(--gray-gray-30, #d8d8d8);
+    color: var(--gray-gray-60, #717171);
+    cursor: not-allowed;
+  }
+  &.small {
+    height: 56px;
+    padding: 0px 20px;
+    background: var(--primary-primary-50, #246beb);
+  }
+  &.xsmall {
+    height: 40px;
+    padding: 0px 12px;
+    border-radius: 6px;
+    background: var(--primary-primary-50, #246beb);
+  }
+}
+
+.btn-secondary {
+  디자인코드 &.small {
+  }
+  &.xsmall {
+  }
+}
+
+.btn-play {
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 4rem;
+  border: 1px solid var(--gray-gray-20, #e4e4e4);
+  background: url(../images/ico_play.svg) no-repeat center var(--gray-gray-0, #fff);
+  align-items: center;
+  gap: 1rem;
+}
+.btn-more {
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 4rem;
+  border: 1px solid var(--gray-gray-20, #e4e4e4);
+  background: url(../images/ico_more.svg) no-repeat center var(--gray-gray-0, #fff);
+  align-items: center;
+  gap: 0.8rem;
+}

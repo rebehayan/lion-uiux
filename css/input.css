@@ -1,0 +1,36 @@
+.input {
+  display: flex;
+  width: 360px;
+  height: 56px;
+  padding: 0px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-gray-60, #717171);
+  background: var(--gray-gray-0, #fff);
+  align-items: center;
+  gap: 8px;
+  &::placeholder {
+    flex: 1 0 0;
+    color: var(--gray-gray-50, #8e8e8e);
+    font-family: "Pretendard GOV";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &:hover {
+    /* 마우스올릴때 */
+  }
+  &.error {
+    /* 에러날때 */
+    border: 2px solid var(--system-danger-50, #eb003b);
+    background: var(--gray-gray-0, #fff);
+  }
+  &:read-only {
+    /* 읽기전용 */
+    border: 1px solid var(--gray-gray-40, #c6c6c6);
+    background: var(--gray-gray-30, #d8d8d8);
+    color: var(--gray-gray-90, #1d1d1d);
+    leading-trim: both;
+    text-edge: cap;
+  }
+}
