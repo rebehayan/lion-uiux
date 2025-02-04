@@ -1,0 +1,13 @@
+/* Figma Styles of your File */
+:root {
+  /* 텍스트 */
+  --txt55: #555;
+  /* 버튼 */
+  --btnPrimary: red;
+
+  /* 서식 */
+  --formSecondary: blue;
+
+  /* 선색 */
+  --line33: #333;
+}
