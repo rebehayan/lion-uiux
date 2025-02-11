@@ -1,0 +1,59 @@
+:root {
+  --radioOffImage: url(../images/ico_radio_off.svg);
+  --radioOnImage: url(../images/ico_radio_on.svg);
+  --radioFontSize: 19px;
+  --radioBeforeColor: #1d1d1d;
+  --radioAfterColor: #1d1d1d;
+  --radioPl: 32px;
+  --radioHeight: 24px;
+}
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  + label {
+    display: inline-flex;
+    padding-left: var(--radioPl);
+    background: var(--radioOffImage) no-repeat left;
+    font-size: var(--radioFontSize);
+    color: var(--radioBeforeColor);
+    height: var(--radioHeight);
+  }
+  &:checked {
+    + label {
+      color: var(--radioAfterColor);
+      background: var(--radioOnImage) no-repeat left;
+    }
+  }
+}
+
+:root {
+  /* --offImage: url(../images/ico_radio_off.svg);
+    --onImage: url(../images/ico_radio_on.svg); */
+  --fontSize2: 19px;
+  --beforeColor2: #1d1d1d;
+  --afterColor2: #1d1d1d;
+  --radioPl2: 32px;
+  --radioHeight2: 24px;
+}
+.radio2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  + label {
+    display: inline-flex;
+    padding-left: var(--radioPl);
+    background: url(../images/ico_radio_off.svg) no-repeat left;
+    font-size: var(--fontSize);
+    color: var(--beforeColor);
+    height: var(--radioHeight);
+  }
+  &:checked {
+    + label {
+      color: var(--afterColor);
+      background: url(../images/ico_radio_on.svg) no-repeat left;
+    }
+  }
+}

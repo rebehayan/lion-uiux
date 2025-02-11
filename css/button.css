@@ -44,6 +44,12 @@
     border-radius: 6px;
     background: var(--primary-primary-50, #246beb);
   }
+  &.min-width {
+    /* min-width:내가정의한 최소가로크기; */
+    /* padding-inline:좌우여백; */
+    min-width: 150px;
+    padding-inline: 15px;
+  }
 }
 
 .btn-secondary {
