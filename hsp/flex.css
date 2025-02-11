@@ -1,0 +1,77 @@
+.flex {
+  border: 1px solid red;
+  padding: 5px;
+  .item {
+    border: 1px solid blue;
+    padding: 5px;
+  }
+}
+/* 
+  flex, grid공통점
+  1. 반드시 부모와 자식관계를 형성해야 함.
+  2. 레이아웃을 구성할때 자식을 배치하는것이 목적
+
+  태그에는 레이아웃과 관련된 특징이 2가지있음.
+  1. block의 특징 ->> 수직으로 배치되는 것
+  2. inline의 특징 ->> 수평으로 배치되는 것
+
+  수평정렬은 justify단어가 포함됩니다.
+  justify-content : start, center, end;
+  수직정렬은 align단어가 포함됩니다.
+     - flex는 수직정렬의 기본값은 stretch(가득채움)
+  align-items: start center end;
+*/
+
+.flex {
+  display: flex;
+  justify-content: end;
+  height: 100px;
+  align-items: end;
+}
+
+.flex-justify {
+  display: flex;
+  border: 1px solid tomato;
+  padding: 5px;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  .item {
+    border: 1px solid seagreen;
+    padding: 5px;
+  }
+}
+
+.flex-glow {
+  display: flex;
+  border: 1px solid saddlebrown;
+  padding: 5px;
+  /* gap:행의gap 열의gap; */
+  /* gap:값1개면 열,행값이 동일하게 적용됨; */
+  gap: 10px 5px;
+  /* flex-wrap: wrap; */
+  .item {
+    border: 1px solid violet;
+    padding: 5px;
+    /* width: 100px; */
+    flex: 1;
+  }
+}
+
+.exam1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.btn-group {
+  display: flex;
+  gap: 12px;
+  button {
+    flex: 1;
+  }
+}
+
+.exam3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

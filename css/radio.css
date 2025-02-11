@@ -1,36 +1,39 @@
-:root {
-  --radioOffImage: url(../images/ico_radio_off.svg);
-  --radioOnImage: url(../images/ico_radio_on.svg);
-  --radioFontSize: 19px;
-  --radioBeforeColor: #1d1d1d;
-  --radioAfterColor: #1d1d1d;
-  --radioPl: 32px;
-  --radioHeight: 24px;
-}
 .radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  + label {
-    display: inline-flex;
-    padding-left: var(--radioPl);
-    background: var(--radioOffImage) no-repeat left;
-    font-size: var(--radioFontSize);
-    color: var(--radioBeforeColor);
-    height: var(--radioHeight);
-  }
-  &:checked {
-    + label {
-      color: var(--radioAfterColor);
-      background: var(--radioOnImage) no-repeat left;
+  --offImage: url(../images/ico_radio_off.svg);
+  --onImage: url(../images/ico_radio_on.svg);
+  --fontSize: 19px;
+  --beforeColor: #1d1d1d;
+  --afterColor: #1d1d1d;
+  --pl: 32px;
+  --height: 24px;
+
+  display: inline-block;
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    &:checked {
+      + label {
+        color: var(--afterColor);
+        background: var(--onImage) no-repeat left;
+      }
     }
+  }
+  label {
+    display: inline-flex;
+    padding-left: var(--pl);
+    background: var(--offImage) no-repeat left;
+    font-size: var(--fontSize);
+    color: var(--beforeColor);
+    height: var(--height);
   }
 }
 
 :root {
-  /* --offImage: url(../images/ico_radio_off.svg);
-    --onImage: url(../images/ico_radio_on.svg); */
+  --radioOffImage2: url(../images/ico_radio_off.svg);
+  --radioOnImage2: url(../images/ico_radio_on.svg);
   --fontSize2: 19px;
   --beforeColor2: #1d1d1d;
   --afterColor2: #1d1d1d;
@@ -44,16 +47,16 @@
   overflow: hidden;
   + label {
     display: inline-flex;
-    padding-left: var(--radioPl);
-    background: url(../images/ico_radio_off.svg) no-repeat left;
-    font-size: var(--fontSize);
-    color: var(--beforeColor);
-    height: var(--radioHeight);
+    padding-left: var(--radioPl2);
+    background: var(--radioOffImage2) no-repeat left;
+    font-size: var(--fontSize2);
+    color: var(--beforeColor2);
+    height: var(--radioHeight2);
   }
   &:checked {
     + label {
-      color: var(--afterColor);
-      background: url(../images/ico_radio_on.svg) no-repeat left;
+      color: var(--afterColor2);
+      background: var(--radioOnImage2) no-repeat left;
     }
   }
 }

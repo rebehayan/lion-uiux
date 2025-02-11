@@ -5,8 +5,8 @@
   border-radius: 8px;
   border: 1px solid var(--gray-gray-60, #717171);
   background: url(../images/ico_select.svg) no-repeat right 16px center var(--gray-gray-0, #fff);
-  /* 배경 : url(주소) 반복여부no-repeat x축좌표 left right center   y축좌표 top bottom center 색상 #index;
-  padding-right: 44px; */
+  /* 배경 : url(주소) 반복여부no-repeat x축좌표 left right center   y축좌표 top bottom center 색상 #index; */
+  padding-right: 44px;
   align-items: center;
   gap: 8px;
   flex: 1 0 0;

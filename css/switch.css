@@ -1,4 +1,4 @@
-:root {
+.switch {
   --width: 100px;
   --height: 40px;
   --padding: 2px;
@@ -8,13 +8,29 @@
   --onColor: lightgreen;
   --onBgColor: green;
   --textColor: #000;
-}
-.switch {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  + label {
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    &:checked {
+      + label {
+        background-color: var(--onBgColor);
+        justify-content: start;
+
+        &::before {
+          left: 100%;
+          translate: calc(-100% - 2px) -50%;
+          background-color: var(--onColor);
+        }
+        &::after {
+          content: attr(data-on);
+        }
+      }
+    }
+  }
+  label {
     position: relative;
     z-index: 10;
     display: flex;
@@ -50,21 +66,6 @@
       line-height: 1;
       transition: 0.4s;
       color: var(--textColor);
-    }
-  }
-  &:checked {
-    + label {
-      background-color: var(--onBgColor);
-      justify-content: start;
-
-      &::before {
-        left: 100%;
-        translate: calc(-100% - 2px) -50%;
-        background-color: var(--onColor);
-      }
-      &::after {
-        content: attr(data-on);
-      }
     }
   }
 }
