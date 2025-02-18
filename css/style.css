@@ -11,3 +11,32 @@
   /* 선색 */
   --line33: #333;
 }
+
+/* 정렬용 클래스 */
+.align {
+  display: flex;
+  &.right {
+    justify-content: end;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.left {
+    justify-content: start;
+  }
+  &.both {
+    justify-content: space-between;
+  }
+  &.vt {
+    align-items: start;
+  }
+  &.vm {
+    align-items: center;
+  }
+  &.vb {
+    align-items: end;
+  }
+  /* vertical-align:top ;
+  vertical-align:middle ;
+  vertical-align:bottom ; */
+}

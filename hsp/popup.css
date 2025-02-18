@@ -1,0 +1,67 @@
+.popup {
+  width: 560px;
+  border: none;
+  border-radius: 12px;
+  padding: 40px;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+  }
+}
+
+.popup-header {
+}
+
+.popup-content {
+  margin-top: 32px;
+}
+/* 
+justify-* 수평정렬
+align-* 수직정렬
+*/
+
+.btn-full {
+  display: flex;
+  button {
+    flex: 1;
+  }
+}
+
+/* 
+  여백 
+  padding과 margin 중에 어떤게 좋을까?
+*/
+
+/* 
+  정렬전용 클래스
+  x축기준 : 좌측정렬, 가운데정렬, 우측정렬
+  y축기준 : 상단정렬, 가운데정렬, 하단정렬
+*/
+.align {
+  display: flex;
+  &.right {
+    justify-content: end;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.left {
+    justify-content: start;
+  }
+  &.both {
+    justify-content: space-between;
+  }
+  &.vt {
+    align-items: start;
+  }
+  &.vm {
+    align-items: center;
+  }
+  &.vb {
+    align-items: end;
+  }
+  /* vertical-align:top ;
+  vertical-align:middle ;
+  vertical-align:bottom ; */
+}
