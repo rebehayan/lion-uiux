@@ -21,11 +21,9 @@ justify-* 수평정렬
 align-* 수직정렬
 */
 
-.btn-full {
-  display: flex;
-  button {
-    flex: 1;
-  }
+.btn-group {
+  margin-top: 32px;
+  gap: 8px;
 }
 
 /* 
